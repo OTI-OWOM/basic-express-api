@@ -78,6 +78,4 @@ mongoose.connect(DB_CONNECTION).then(() => {
 
 
 
-app.listen(3000, () => {
-  console.log('Server is running on http://localhost:3000');
-});
+module.exports = app; // Export the app for serverless deployment or testing
